@@ -21,6 +21,7 @@ ImageLoader loader=ImageLoader.getInstance();//Singleton Instance
 * context : Context.
 * initial(int resource) : Image in the imageview before image from url gets loaded
 * transitionTime(milliseconds) : time to smoothly change the image when loaded.
+* url : String
 * imageView : <? extends ImageView>
 * load() : start loading image in background thread.
 * curveFactor(2f) : Rounded corners of imageview.
