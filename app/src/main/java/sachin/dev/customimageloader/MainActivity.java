@@ -19,12 +19,8 @@ public class MainActivity extends AppCompatActivity {
         imageView=findViewById(R.id.imageview);
 
         ImageLoader loader=ImageLoader.getInstance();
-        try {
-            loader.url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F53BsyxwSBJk%2Fmaxresdefault.jpg&f=1&nofb=1").with(this).initial(R.drawable.parthapratim).transitionTime(500).into(imageView).curveFactor(2).load();
-        } catch (Exception e) {
-            Log.d("IMAGE-LOADER",e.getMessage());
-            e.printStackTrace();
-        }
+        loader.url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F53BsyxwSBJk%2Fmaxresdefault.jpg&f=1&nofb=1").with(this).initial(R.drawable.parthapratim).transitionTime(500).into(imageView).curveFactor(2).load();
+
     }
 
     @Override

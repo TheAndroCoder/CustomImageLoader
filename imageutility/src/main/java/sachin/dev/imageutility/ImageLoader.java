@@ -14,9 +14,6 @@ import java.io.InputStream;
 import java.net.URL;
 
 import androidx.core.app.ActivityCompat;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 
 public class ImageLoader {
     private static ImageLoader instance=null;
@@ -58,7 +55,7 @@ public class ImageLoader {
         this.TRANSITION_TIME=time;
         return this;
     }
-    public void load() throws Exception{
+    public void load(){
         //Run a new thread to load the image
         if(ActivityCompat.checkSelfPermission(context, Manifest.permission.INTERNET)!= PackageManager.PERMISSION_GRANTED){
             Log.d("IMAGE_LOADER","[INTERNET PERMISSION DENIED]");
