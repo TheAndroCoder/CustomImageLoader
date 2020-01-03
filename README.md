@@ -19,9 +19,11 @@ allprojects {
 ImageLoader loader=ImageLoader.getInstance();//Singleton Instance
 /**
 * context : Context.
+* initial(int resource) : Image in the imageview before image from url gets loaded
 * transitionTime(milliseconds) : time to smoothly change the image when loaded.
 * imageView : <? extends ImageView>
 * load() : start loading image in background thread.
+* curveFactor(2f) : Rounded corners of imageview.
 */
-loader.with(context).url(url).initial(R.drawable.image1).transitionTime(300).into(imageView).load();
+loader.with(context).url(url).initial(R.drawable.image1).transitionTime(300).curveFactor(2f).into(imageView).load();
 ```
