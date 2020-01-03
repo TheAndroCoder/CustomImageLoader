@@ -14,8 +14,13 @@ allprojects {
 		}
 	}
 ```
-<strong>USAGE<strong>
+<strong>USAGE<strong><br>
 ```java
 ImageLoader loader=ImageLoader.getInstance();//Singleton Instance
 loader.with(context).url(url).initial(R.drawable.image1).transitionTime(300).into(imageView).load();
+/**
+* context : Context.
+* transitionTime(milliseconds) : time to smoothly change the image when loaded.
+* imageView : <? extends ImageView>
+* load() : start loading image in background thread.
 ```
