@@ -3,7 +3,7 @@
 <strong>DOWNLOAD</strong><br>
 Gradle (Module : app)
 ```groovy
-  implementation 'com.github.TheAndroCoder:CustomImageLoader:1.0'
+  implementation 'com.github.TheAndroCoder:CustomImageLoader:1.1'
 ```
 Gradle (Project Level)
 ```groovy
