@@ -1,9 +1,8 @@
 # Custom Image Loader
-**Attention**: curveFactor doesnot work in this version. will be implemented in the next release.<br>
 <strong>HOW TO DOWNLOAD?</strong><br>
 <strong>Gradle (Module : app)</strong><br>
 ```groovy
-  implementation 'com.github.TheAndroCoder:CustomImageLoader:1.1'
+  implementation 'com.github.TheAndroCoder:CustomImageLoader:1.3'
 ```
 <strong>Gradle (Project Level)</strong><br>
 ```groovy
