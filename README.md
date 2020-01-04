@@ -26,5 +26,5 @@ ImageLoader loader=ImageLoader.getInstance();//Singleton Instance
 * load() : start loading image in background thread.
 * curveFactor(2f) : Rounded corners of imageview.
 */
-loader.with(context).url(url).initial(R.drawable.image1).transitionTime(300).curveFactor(2f).into(imageView).load();
+loader.with(context).url(url).initial(R.drawable.image1).transitionTime(300).roundedCorners(true).into(imageView).load();
 ```
