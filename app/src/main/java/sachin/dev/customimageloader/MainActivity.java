@@ -17,9 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView=findViewById(R.id.imageview);
-
         ImageLoader loader=ImageLoader.getInstance();
-        loader.url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F53BsyxwSBJk%2Fmaxresdefault.jpg&f=1&nofb=1").with(this).initial(R.drawable.parthapratim).transitionTime(500).into(imageView).curveFactor(2).load();
+        loader.url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnyppagesix.files.wordpress.com%2F2019%2F05%2Fgettyimages-1149239562.jpg%3Fquality%3D90%26strip%3Dall%26w%3D1200&f=1&nofb=1").with(this).initial(R.drawable.visual_slide24_1).transitionTime(500).into(imageView).roundedCorners(true).load();
 
     }
 
